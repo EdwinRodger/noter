@@ -4,10 +4,13 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                custom: ["Nunito, sans-serif"],
+                custom: ["Nunito", "sans-serif"],
             },
+        },
+        container: {
+            center: true,
+            padding: "2rem",
         },
     },
     plugins: [],
 }
-
