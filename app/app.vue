@@ -1,11 +1,13 @@
 <template>
-  <div class="min-h-screen bg-blue-500">
-    <h1 class="text-xl">Hello World</h1>
-  </div>
+    <div class="min-h-screen bg-blue-500">
+        <NuxtLayout>
+            <NuxtPage />
+        </NuxtLayout>
+    </div>
 </template>
 
-<style>
-* {
-  font-family: 'Nunito', sans-serif;
+<style scoped>
+div {
+    font-family: 'Nunito', sans-serif;
 }
 </style>
