@@ -1,7 +1,6 @@
 <template>
     <div>
-        <Navbar />
-        <slot />
+        <p class="text-xl container">About Page</p>
     </div>
 </template>
 
