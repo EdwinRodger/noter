@@ -10,9 +10,15 @@
                 </div>
             </div>
             <div>
-                <div v-for="note in notes" :key="note.id" class="mb-2 bg-white p-2">
-                    <p><strong>{{ note.title }}</strong></p>
-                    <p>{{ note.description }}</p>
+                <div v-for="note in notes" :key="note.id" class="mb-2 bg-white p-2 flex justify-between items-center">
+                    <div>
+                        <p><strong>{{ note.title }}</strong></p>
+                        <p>{{ note.description }}</p>
+                    </div>
+                    <div class="flex gap-10">
+                        <button>Update</button>
+                        <button class=" text-red-500" @click="handleDelete(note.id)">Delete</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,10 +40,16 @@ const handleRefresh = async () => {
 }
 
 const handleSubmit = async () => {
-    console.log(title.value, description.value)
     const { error } = await client.from('notes').insert({ title: title.value, description: description.value })
     title.value = ''
     description.value = ''
     if (error) { console.log("Error Desu: " + error) }
+}
+
+const handleDelete = async (id) => {
+    const response = await client
+        .from('notes')
+        .delete()
+        .eq('id', id)
 }
 </script>
