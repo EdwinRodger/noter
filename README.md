@@ -1,75 +1,9 @@
-# Nuxt Minimal Starter
+**About Noter**
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Noter is a simple note-taking app built to explore and learn modern full-stack development using Nuxt and Supabase. The goal of this project is to keep things minimal while focusing on the core fundamentals of building a functional web application.
 
-## Setup
+With Noter, you can create, read, update, and delete notes through a clean and straightforward interface. It’s designed without unnecessary complexity, making it easy to understand how data flows between the frontend and backend.
 
-Make sure to install dependencies:
+Nuxt powers the user interface and routing, while Supabase handles the database and backend services. Together, they provide a fast and developer-friendly environment for building real-world applications.
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project serves as a hands-on learning experience, demonstrating how to connect a frontend framework to a backend service, manage state, and implement basic CRUD operations in a practical way.
