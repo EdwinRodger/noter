@@ -16,7 +16,7 @@
                         <p>{{ note.description }}</p>
                     </div>
                     <div class="flex gap-10">
-                        <button>Update</button>
+                        <!-- <button>Update</button> -->
                         <button class=" text-red-500" @click="handleDelete(note.id)">Delete</button>
                     </div>
                 </div>
